@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'DulceDespertarApp',
     'Desayunos',
     'Adicionales',
+    'contacto',
 ]
 
 MIDDLEWARE = [

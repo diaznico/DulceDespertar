@@ -23,5 +23,6 @@ urlpatterns = [
     path('', include('DulceDespertarApp.urls')),
     path('Desayunos/', include('Desayunos.urls')),
     path('Adicionales/', include('Adicionales.urls')),
-
+    path('contacto/', include('contacto.urls')),
+    
 ]

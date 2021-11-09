@@ -277,3 +277,16 @@ ul.errorlist{
   font-style: italic;
   color: red;
 }
+
+.contenedorFormulario{
+
+  background-color: rgba(255, 122, 213, 0.89);
+
+  width: 50%;
+
+  margin: 20px auto;
+
+  border-radius: 10px ;
+
+  padding: 15px 3px;
+}
