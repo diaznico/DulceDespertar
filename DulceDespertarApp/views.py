@@ -9,9 +9,7 @@ def home(request):
     return render(request, "DulceDespertarApp/home.html")
 
 
-def tienda(request):
 
-    return render(request, "DulceDespertarApp/tienda.html")
 
 
 def preguntas_frecuentes(request):
