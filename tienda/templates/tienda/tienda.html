@@ -4,20 +4,33 @@
 {% block content %}
 
 <div class="container">
+
+    <!--
+    <div style="float:right;">
+        <p style="color: white;">texto de prueba</p>
+    </div> -->
+
     <div class="row">
 
 {% for productos in productos %}
 
-    <div class="col">
+    <div class="col-md-3">
 
-        <div class="card" style="width: 30%">
+        <div class="card" style="display: flex; width: 100%; justify-content: space-around; flex-wrap: wrap; max-width: 1000px; margin: 10px 10px;">
 
-            <img src="{{productos.imagen.url}}">
+            <img src="{{productos.imagen.url}}" class="card-img-top" style="width: 253px; height: 253px; margin-bottom: 30px; object-fit: cover;">
 
             <div class="card-body" style="text-align: center;">
 
                 <h7 class="card-title">{{productos.nombre}}</h7>
                 <p class="card-text">{{productos.precio}}&nbsp;$</p>
+
+            </div>
+
+            <div class="card-footer text-center">
+
+                <a href="#" class="btn btn-success ">Agregar al carro</a>
+    
 
             </div>
 
