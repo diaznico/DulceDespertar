@@ -5,10 +5,12 @@
 
 <div class="container">
 
-    <!--
     <div style="float:right;">
-        <p style="color: white;">texto de prueba</p>
-    </div> -->
+        <p style="color: white; margin: 10px 5px">Total: {{importe_total_carro}} $</p>
+
+        {% include "carro/widget.html" %}
+
+    </div> 
 
     <div class="row">
 
@@ -16,9 +18,9 @@
 
     <div class="col-md-3">
 
-        <div class="card" style="display: flex; width: 100%; justify-content: space-around; flex-wrap: wrap; max-width: 1000px; margin: 10px 10px;">
+        <div div class = "card" style="width: 100%; margin: 10px 5px" >
 
-            <img src="{{productos.imagen.url}}" class="card-img-top" style="width: 253px; height: 253px; margin-bottom: 30px; object-fit: cover;">
+            <img src="{{productos.imagen.url}}" class = "card-img-top">
 
             <div class="card-body" style="text-align: center;">
 
@@ -29,7 +31,7 @@
 
             <div class="card-footer text-center">
 
-                <a href="#" class="btn btn-success ">Agregar al carro</a>
+                <a href="{% url 'carro:agregar' 1234 %}" class="btn btn-success ">Agregar al carro</a>
     
 
             </div>
@@ -43,5 +45,6 @@
 
     </div>
 </div>
+
 
 {% endblock %}
