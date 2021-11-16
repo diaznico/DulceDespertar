@@ -4,7 +4,9 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  
 }
+
 
 h1,
 h2,
@@ -82,6 +84,13 @@ p {
 #mainNav {
   background-color: rgba(255, 122, 213, 0.89);
   font-family: 'Raleway';
+  width: 100%;
+
+  margin: 20px auto;
+
+  border-radius: 10px ;
+
+  padding: 15px 3px;
 }
 
 #mainNav .navbar-brand {
@@ -134,9 +143,10 @@ p {
     left: 600;
     width: 60%;
     margin-top: 3rem;
-    background-color: rgba(24, 64, 8);
+    background-color: rgb(255, 122, 213);
     color: cornsilk;
     position: absolute;
+
   }
   .intro .intro-text .intro-button {
     width: 100%;
@@ -230,6 +240,15 @@ p {
 
 .footer {
    background-color: rgba(255, 122, 213, 0.89);
+   font-family: 'Raleway';
+   width: 100%;
+ 
+   margin: 20px auto;
+ 
+   border-radius: 10px ;
+ 
+   padding: 15px 3px;
+
 }
 
 
@@ -281,6 +300,7 @@ ul.errorlist{
 .contenedorFormulario{
 
   background-color: rgba(255, 122, 213, 0.89);
+  font-family: 'Raleway';
 
   width: 50%;
 
@@ -290,3 +310,4 @@ ul.errorlist{
 
   padding: 15px 3px;
 }
+

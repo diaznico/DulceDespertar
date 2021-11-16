@@ -20,13 +20,14 @@
 
 <body>
 
-  <p class="Please set custom CSS styles in Settings" style="text-align: center;"><span style="font-family: Impact, Charcoal, sans-serif; font-size: 96px; color: rgb(255, 97, 220); text-shadow: rgba(186, 186, 186, 0.55) -2px 4px 3px;">DULCE DESPERTAR</span></p>
-  
+  <!--<p class="Please set custom CSS styles in Settings" style="text-align: center;"><span style="font-family: Impact, Charcoal, sans-serif; font-size: 96px; color: rgb(255, 97, 220); text-shadow: rgba(186, 186, 186, 0.55) -2px 4px 3px;">DULCE DESPERTAR</span></p>
+  -->
+  <p style="text-align: center;"><span style="font-size: 96px; color: rgb(239, 239, 239); text-shadow: rgb(255, 122, 213) 1px 0px 9px;">DULCE DESPERTAR</span></p>
 
  <!-- Navbar -->
  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
-      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'Home' %}">Gestión de Pedidos</a>
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'Home' %}">Dulce Despertar</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -35,14 +36,13 @@
           <li class="nav-item {% if request.path == '/' %}active{% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Home' %}">Inicio</a>
           </li>
+
             <li class="nav-item {% if request.path == '/desayunos' %}active{% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Desayunos' %}">Desayunos</a>
           </li>
+          
           <li class="nav-item {% if request.path == '/adicionales' %}active{% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Adicionales' %}">Adicionales</a>
-          </li>
-          <li class="nav-item {% if request.path == '/tienda' %}active{% endif %} px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Tienda' %}">Tienda</a>
           </li>
           <li class="nav-item {% if request.path == '/preguntas_frecuentes' %}active{% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Preguntas Frecuentes' %}">Preguntas Frecuentes</a>
@@ -50,7 +50,7 @@
           <li class="nav-item {% if request.path == '/contacto' %}active{% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Contacto' %}">Contacto</a>
           </li>
-         
+          
         </ul>
       </div>
     </div>
