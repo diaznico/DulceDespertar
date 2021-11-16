@@ -66,6 +66,7 @@ p {
   display: block;
   font-size: 3rem;
   font-weight: 100;
+
 }
 
 
@@ -91,6 +92,7 @@ p {
   border-radius: 10px ;
 
   padding: 15px 3px;
+  box-shadow: 5px 5px 39px 1px rgb(226, 92, 226);
 }
 
 #mainNav .navbar-brand {
@@ -143,9 +145,10 @@ p {
     left: 600;
     width: 60%;
     margin-top: 3rem;
-    background-color: rgb(255, 122, 213);
+    background-color: rgba(255, 122, 213, 0.92);
     color: cornsilk;
     position: absolute;
+    box-shadow: 5px 5px 39px 1px rgb(226, 92, 226);
 
   }
   .intro .intro-text .intro-button {
@@ -163,17 +166,18 @@ p {
 }
 
 .cta {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: rgb(242, 245, 240);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
 }
 
 .cta .cta-inner {
   position: relative;
   padding: 3rem;
   margin: 0.5rem;
-  background-color: rgba(24, 64, 8);
+  background-color: rgba(255, 122, 213, 0.89);
   color: cornsilk;
+  box-shadow: 5px 5px 39px 1px rgb(226, 92, 226);
 }
 
 .cta .cta-inner:before {
@@ -184,14 +188,14 @@ p {
   bottom: -0.5rem;
   left: -0.5rem;
   right: -0.5rem;
-  border: 0.25rem solid rgba(255, 255, 255, 0.85);
+  
 }
 
 .cta .cta-innerv {
   position: relative;
   padding: 3rem;
   margin: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 @media (min-width: 992px) {
@@ -248,6 +252,7 @@ p {
    border-radius: 10px ;
  
    padding: 15px 3px;
+   box-shadow: 5px 5px 39px 1px rgb(226, 92, 226);
 
 }
 
@@ -309,5 +314,19 @@ ul.errorlist{
   border-radius: 10px ;
 
   padding: 15px 3px;
+  box-shadow: 5px 5px 39px 1px rgb(226, 92, 226);
 }
 
+
+.Caja {
+
+  background-color: rgba(255, 122, 213, 0.89);
+  border: 10px outset #cafcf9;
+  border-radius: 15px;
+  width: 1100px;
+  height: 900px;
+  margin: 40px auto;
+  padding: 15px 3px;
+  box-shadow: 5px 5px 39px 1px rgb(226, 92, 226);
+
+}
