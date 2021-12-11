@@ -7,5 +7,5 @@ from django.conf.urls.static import static
 urlpatterns = [
 
     path('desayunos',views.desayunos1, name="Desayunos"),
-
+    
 ]

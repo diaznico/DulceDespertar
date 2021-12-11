@@ -330,3 +330,20 @@ ul.errorlist{
   box-shadow: 5px 5px 39px 1px rgb(226, 92, 226);
 
 }
+
+#oculto{
+  display: none;
+}
+
+#check:checked ~ #oculto{
+  display: block;
+}
+
+.detalles{
+  font-size: 1.1rem;
+  display: table-cell;
+  margin: 0;
+  padding: 0 1rem;
+  vertical-align: middle;
+}
+

@@ -1,3 +1,5 @@
+from django import http
+from django.http.response import HttpResponse
 from django.shortcuts import render
 from Desayunos.models import desayunos
 
@@ -9,3 +11,4 @@ def desayunos1(request):
     servicios = desayunos.objects.all()
 
     return render(request, "Desayunos/desayunos.html", {"servicios": servicios})
+

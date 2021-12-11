@@ -3,8 +3,12 @@
 {% load static %}
 
 {% block content %}
-<title>Desayunos</title>
+
+    <title>Desayunos</title>
+    
+
     {% for servicios in servicios %}
+    
 
     <section class="page-section clearfix">
         <div class="container">
@@ -12,8 +16,20 @@
             <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{servicios.imagen.url}}" alt="" style="width:60%;">
             <div class="intro-text left-0 text-center bg-faded p-5 rounded">
               <h2 class="section-heading mb-4" >
-                <span class="section-heading-lower">{{servicios.titulo}}</span>
+                
+                <span class="section-heading-lower" >{{servicios.titulo}}</span>
                 <span class="section-heading-upper">{{servicios.contenido}}</span>
+
+                <label for="check" >contenido</label>
+                <input type="checkbox" id="check">
+              
+
+                <p id="oculto">
+                <span class="detalles">{{servicios.descripcion|linebreaksbr }}</span>
+                </p>
+                
+              
+
               </h2>
               
              
@@ -21,9 +37,9 @@
           </div>
         </div>
       </section>
-    
-
 
     {% endfor %}
+
+
 
 {% endblock %}
